@@ -1,0 +1,6 @@
+D:\joyce\104\viewPatientApp\viewPatientApp\bin\viewPatientApp.dll.config
+D:\joyce\104\viewPatientApp\viewPatientApp\bin\viewPatientApp.dll
+D:\joyce\104\viewPatientApp\viewPatientApp\bin\viewPatientApp.pdb
+D:\joyce\104\viewPatientApp\viewPatientApp\obj\Debug\viewPatientApp.csprojResolveAssemblyReference.cache
+D:\joyce\104\viewPatientApp\viewPatientApp\obj\Debug\viewPatientApp.dll
+D:\joyce\104\viewPatientApp\viewPatientApp\obj\Debug\viewPatientApp.pdb

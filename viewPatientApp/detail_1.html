@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/metro-bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/metro.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="js/metro/metro-listview.js"></script>
+    <link href="css/iconFont.min.css" rel="stylesheet" />
+</head>
+<body class="metro" ng-app="detailInfoApp" onload="onLoad()">
+    <div class="panel" ng-controller="detailInfoControler">      
+        <div class="panel-header bg-lightBlue fg-white">
+            <i class="icon-arrow-left-3" onclick="onBackKeyDown()"></i>   病患列表</div>
+        <div class="panel-content">
+            <form>
+                <legend>
+                    <i class="icon-rocket on-left"></i>
+                     病患基本資料
+                </legend>
+                <label>姓名</label>
+                <div class="input-control text" data-role="input-control">
+                    <input type="text" placeholder="type text" readonly>
+                </div>
+                <label>生日</label>
+                <input type="date" readonly />
+                <br />
+                <label>性別</label>
+                <div class="input-control radio default-style margin10" data-role="input-control">
+                    <label>
+                        男
+                        <input type="radio" name="r3" checked="">
+                        <span class="check"></span>
+                    </label>
+                </div>
+                <div class="input-control radio default-style margin10" data-role="input-control">
+                    <label>
+                        女
+                        <input type="radio" name="r3" checked="checked">
+                        <span class="check"></span>
+                    </label>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="panel" data-role="panel">
+        <div class="panel-header">
+             就診處置
+        </div>
+        <div class="panel-content">
+            <div class="listview-outlook" data-role="listview">
+                <div class="list-group collapsed">
+                    <a href="" class="group-title">Today</a>
+                    <div class="group-content" style="display: none;">
+                        <a class="list marked" href="#">
+                            <div class="list-content">
+                                <span class="list-title">subscribe@metroui.net</span>
+                                <span class="list-subtitle">MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                        <a class="list" href="#">
+                            <div class="list-content">
+                                <span class="list-title">subscribe@metroui.net</span>
+                                <span class="list-subtitle">MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                        <a class="list active" href="#">
+                            <div class="list-content">
+                                <span class="list-title">subscribe@metroui.net</span>
+                                <span class="list-subtitle">MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                        <a class="list" href="#">
+                            <div class="list-content">
+                                <span class="list-title">subscribe@metroui.net</span>
+                                <span class="list-subtitle">MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list-group collapsed">
+                    <a href="" class="group-title">Yesterday</a>
+                    <div class="group-content" style="display: none;">
+                        <a class="list" href="#">
+                            <div class="list-content">
+                                <span class="list-title"><span class="place-right icon-flag-2 fg-red smaller"></span>subscribe@metroui.net</span>
+                                <span class="list-subtitle"><span class="place-right">1:51</span>MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                        <a class="list" href="#">
+                            <div class="list-content">
+                                <span class="list-title"><span class="place-right icon-flag-2 fg-green smaller"></span>subscribe@metroui.net</span>
+                                <span class="list-subtitle"><span class="place-right">1:51</span>MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                        <a class="list" href="#">
+                            <div class="list-content">
+                                <span class="list-title">subscribe@metroui.net</span>
+                                <span class="list-subtitle"><span class="place-right">1:51</span>MetroUI: News on 26/10/2013</span>
+                                <span class="list-remark">Hello friend! Newest for Metro UI CSS</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    //angular 語法
+
+
+
+    
+    function onLoad(){
+           document.addEventListener('deviceready', onDeviceReady, false);
+    }
+
+    function onDeviceReady() {
+       document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+
+    function onBackKeyDown() {
+      history.go(-1);
+      navigator.app.backHistory();
+    }
+
+
+    var app = angular.module("detailInfoApp", []);
+
+    app.controller("detailInfoControler", function ($scope, $window) {
+      
+	
+
+    })
+   
+</script>
